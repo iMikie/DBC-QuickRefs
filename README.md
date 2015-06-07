@@ -68,7 +68,7 @@ You can also use '+' and '-' instead of '*'
 :----:  centered <br>
 -----:  right aligned
 
-```markdown
+```
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
@@ -76,21 +76,28 @@ You can also use '+' and '-' instead of '*'
 | zebra stripes | are neat      |    $1 |
 ```
 
-###Headings
-----
 
-
-###To see this:   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;       Type this at the left margin:
-#Heading         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 1`   <br>   
-##Heading 2       &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 2`    <br>    
-###Heading 3      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 3`
-####Heading 4     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 4`
-#####Heading 5       &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 5`
-######Heading 6     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`#Heading 6`
-
-
-##3# Bold and Italic
+###Code
 ---
 
-**bold text** and *italic text* &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `**bold text** and *italic text*`
+This is one of the coolest features of GitHub based markdown. 
+```ruby
+class MyClass
+  def initialize(gimme: a_variable)
+    p "When in doubt, p it out."
+    puts "Try RubyMine to see what an IDE for Ruby is like."
+  end
+end
+```
+
+```text
+  ```ruby
+  class MyClass
+    def initialize(gimme: a_variable)
+      p "When in doubt, p it out."
+      puts "Try RubyMine to see what an IDE for Ruby is like."
+    end
+  end
+  ```
+```
 
