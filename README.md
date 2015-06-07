@@ -214,6 +214,39 @@ You can also do this with pure Markdown but the result is less than spectacular:
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=OwevNBQvmwc)
 
-
-
 <iframe width="640" height="390" src="https://www.youtube.com/embed/OwevNBQvmwc" frameborder="0" allowfullscreen></iframe>
+---
+
+###Special Characters
+You want \*asterisk\* but markdown thinks you want italics:  *asterisk*. 
+Put a backslash \\ before the special character.
+
+                    \*literal asterisks\*
+            
+Markdown provides backslash escapes for the following characters:
+
+                    \   backslash
+                    `   backtick
+                    *   asterisk
+                    _   underscore
+                    {}  curly braces
+                    []  square brackets
+                    ()  parentheses
+                    #   hash mark
+                    +   plus sign
+                    -   minus sign (hyphen)
+                    .   dot
+                    !   exclamation mark
+                    
+Special characters
+Character	Representation	Description<br>
+&copy; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&copy;`&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;    Copyright<br>
+&reg;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&reg;`&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;     Registered trade mark <br>
+&euro;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&euro;` &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   Euro sign <br>
+&trade;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&trade;` &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  Trademark sign <br>
+&hearts;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&hearts;`&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  Heart <br>
+&larr;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&larr;` &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  Left arrow <br>
+&rarr;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&rarr; `&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   Right arrow <br>
+&uarr;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&uarr;` &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;	  Up arrow <br>
+&darr;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&darr;` &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   Down arrow <br>
+&harr;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;`&harr; `&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   Right-left arrow <br>
