@@ -28,15 +28,17 @@ For a single break or for 3 or more, use `<br>`
 
 Use the HTML <br> to force a new line anywhere&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `Use the HTML <br> to force a new line anywhere` <br>
 
-For **bold text** and *italic text*,  `Use asterisks: **bold text** and *italic text*`
+For **bold text** and *italic text*, &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; `For **bold text** and *italic text*`
 
-For ***bold and italic*** &nbsp; &nbsp; &nbsp;&nbsp; `Use lots of asterisks: ***bold and italic***`
+For ***bold and italic***  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; `For ***bold and italic***`
 
-For ~~strike through text~~  &nbsp; &nbsp; &nbsp;&nbsp;  `use the tilda char: ~~strick through text~~~`
+For ~~strike through text~~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  `For ~~strick through text~~~`
 
-For superscript,  O(n<sup>2</sup>) &nbsp; &nbsp; &nbsp;&nbsp;`Use raw HTML:  O(n<sup>2</sup>)`
+For superscript,  O(n<sup>2</sup>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;`Use raw HTML:  O(n<sup>2</sup>)`
 
-For subscript: binary_search<sub>2</sub>, &nbsp; &nbsp; &nbsp;&nbsp; `Again, raw HTML: binary_search<sub>2</sub>`
+For subscript: binary_search<sub>2</sub>, &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; `For subscript: binary_search<sub>2</sub>`
+
+For non breaking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces inside a line &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Use &nbsp; `
 
 ###Lists
 ----
