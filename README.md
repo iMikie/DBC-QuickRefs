@@ -18,15 +18,29 @@ On the Macintosh, Markdown Pro is a pretty good editing app, allowing you to typ
 
 Here we go:
 
+###Headings
+------
+
+
+###To see this:   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;       Type this at the left margin:
+#Heading         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 1`   <br>   
+##Heading 2       &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 2`    <br>    
+###Heading 3      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 3`
+####Heading 4     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 4`
+#####Heading 5       &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 5`
+######Heading 6     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`#Heading 6`
+---
+You can use --- on a line buy itself to create a horizontal rule or add 6, ------, right after a heading to include a rule for the H3 and greater headings that don't usually have it.
+
 ###Normal text
-----
+------
 For normal text, just type normal text, like this.
 
 For a paragraph break, hit return twice. 
 For a single break or for 3 or more, use `<br>`
 
 
-Use the HTML <br> to force a new line anywhere&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `Use the HTML <br> to force a new line anywhere` <br>
+Use the HTML code for break, <br> to force a new line anywhere&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `Use the HTML code <br> to force a new line anywhere` <br>
 
 For **bold text** and *italic text*, &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; `For **bold text** and *italic text*`
 
@@ -41,7 +55,7 @@ For subscript: binary_search<sub>2</sub>, &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp
 For non breaking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces inside a line &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Use &nbsp; `
 
 ###Lists
-----
+------
 
 * Top level item     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   `* Top level item, start line with *`
   * Second level      &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   `<tab> * Second level `
@@ -57,7 +71,7 @@ You can also use '+' and '-' instead of '*'
     2. Indented 2
 
 ###Tables
-----
+-
 
 | Tables        | Are           | Cool  |    
 | ------------- |:-------------:| -----:|
@@ -78,9 +92,20 @@ You can also use '+' and '-' instead of '*'
 
 
 ###Code
----
+------
 
-This is one of the coolest features of GitHub based markdown. 
+Tell GitHub what language and it will syntax highlight the code. (Note if you aren't viewing this in GitHub you might not see the highlighting.)
+
+    ```ruby
+      class MyClass
+        def initialize(gimme: a_variable)
+          p "When in doubt, p it out."
+          puts "Try RubyMine to see what an IDE for Ruby is like."
+        end
+      end
+      ``` 
+
+
 ```ruby
 class MyClass
   def initialize(gimme: a_variable)
@@ -90,14 +115,11 @@ class MyClass
 end
 ```
 
-```text
-  ```ruby
-  class MyClass
-    def initialize(gimme: a_variable)
-      p "When in doubt, p it out."
-      puts "Try RubyMine to see what an IDE for Ruby is like."
-    end
-  end
-  ```
-```
+
+
+Other languages supported include \`\`\`HTML, \`\`\`javascript, \`\`\`python and maybe more
+
+
+
+
 
