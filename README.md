@@ -11,8 +11,10 @@ Good luck!
 
 ---
 
+<br>
 ###Markdown
---
+-
+
 Some people never left the 80's.  For them the desktop publishing revolution never took place.  Pages, MS Word and PDF might as well not exist.  Instead, they have markdown.  Alas, you will have to learn it too. You write documents in plain text, putting in little secret codes.  Isn't that cute?  One advantage is that it can be stored with code as plain text.  You can even write it with a code editor if you can remember those secret codes.  That's where this cheatsheet comes in. 
 
 On the Macintosh, Markdown Pro is a pretty good editing app, allowing you to type in the left pane and see the result in the right.  In GitHub, if you create a filename.md file, look for the pencil icon.  That will let you edit and preview right in the github page and it's preview is the best. Make sure you are in your GitHub account!)  GitHub even colorizes your programming code (see below).  
@@ -30,8 +32,13 @@ Here we go:
 ####Heading 4     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 4`
 #####Heading 5       &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `#Heading 5`
 ######Heading 6     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`#Heading 6`
----
-You can use --- on a line buy itself to create a horizontal rule or add 6, ------, right after a heading to include a rule for the H3 and greater headings that don't usually have it.
+
+###Horizontal Rules
+A single - alone on a line with a blank line before it will give a thin line:
+
+-
+
+a triple --- alone on a line with a blank line before will give a thick line: 
 
 ###Normal text
 -
@@ -53,7 +60,10 @@ For superscript,  O(n<sup>2</sup>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &
 
 For subscript: binary_search<sub>2</sub>, &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; `For subscript: binary_search<sub>2</sub>`
 
-For non breaking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces inside a line &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Use &nbsp; `
+For non breaking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces inside a line &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Use &nbsp;` 
+
+
+
 
 ###Lists
 ------
