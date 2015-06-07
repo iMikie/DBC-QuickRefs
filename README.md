@@ -11,7 +11,8 @@ Good luck!
 
 ---
 
-##Markdown
+###Markdown
+--
 Some people never left the 80's.  For them the desktop publishing revolution never took place.  Pages, MS Word and PDF might as well not exist.  Instead, they have markdown.  Alas, you will have to learn it too. You write documents in plain text, putting in little secret codes.  Isn't that cute?  One advantage is that it can be stored with code as plain text.  You can even write it with a code editor if you can remember those secret codes.  That's where this cheatsheet comes in. 
 
 On the Macintosh, Markdown Pro is a pretty good editing app, allowing you to type in the left pane and see the result in the right.  In GitHub, if you create a filename.md file, look for the pencil icon.  That will let you edit and preview right in the github page and it's preview is the best. Make sure you are in your GitHub account!)  GitHub even colorizes your programming code (see below).  
@@ -19,7 +20,7 @@ On the Macintosh, Markdown Pro is a pretty good editing app, allowing you to typ
 Here we go:
 
 ###Headings
-------
+-
 
 
 ###To see this:   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;       Type this at the left margin:
@@ -33,7 +34,7 @@ Here we go:
 You can use --- on a line buy itself to create a horizontal rule or add 6, ------, right after a heading to include a rule for the H3 and greater headings that don't usually have it.
 
 ###Normal text
-------
+-
 For normal text, just type normal text, like this.
 
 For a paragraph break, hit return twice. 
