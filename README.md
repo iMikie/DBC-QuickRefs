@@ -15,13 +15,13 @@ Good luck!
 ###Markdown
 -
 
-Some people never left the 80's.  For them the desktop publishing revolution never took place.  Instead, they have markdown.  Alas, you will have to learn it too.
+Some people never left the 80's.  For them the desktop publishing revolution never took place.  Instead, they have markdown.  Alas, you will have to learn it too as it's kind of a standard in programmer land.
 
-How it works: rather than seeing your page as you work on it, you write plain text, putting in little secret codes that no one remembers.  Isn't that cute? Then there's the problem of how to see what it looks like.  You need something that can translate markdown into HTML and your browser can't.
+How it works: rather than seeing your page as you work on it like a normal editor, you write plain text, putting in little secret codes that no one remembers.  Isn't that cute? Then there's the problem of how to see what it looks like.  You need something that can translate markdown into HTML and your browser can't.
 
 On the Macintosh, [Markdown Pro](https://www.markdownpro.com) is a pretty good editing app, allowing you to type in the left pane and see the result in the right.  It won't show linked images though.  
 
-In GitHub, if you create a repository it will automativally create a readme.md file.  Look for the pencil icon.  That will let you edit and preview right in the github browser page.  While editing look for the preview tab.  GitHub even colorizes your programming code (see below).  
+In GitHub, if you create a repository it will automatically create a readme.md file.  Look for the pencil icon.  That will let you edit and preview right in the github browser page.  While editing look for the preview tab.  GitHub even colorizes your programming code (see below).  
 
 Here we go.
 
@@ -175,23 +175,26 @@ Later in the file we need to include the following:
 [Link matches this text]: http://devbootcamp.com
 [found here.]: http://github.com/iMikie/DBC-QuickRefs
 ```
+---
 
 ###Images
 
 In-line:
 
-`![alt text for search engines] (http://devbootcamp.com/assets/img/devbootcamp-logo.png)`
-The above gives us the image itself: 
+`![alt text for search engines] (http://devbootcamp.com/assets/img/devbootcamp-logo.png)`<br>
+The above gives us the image itself: <br>
 ![alt text] (http://devbootcamp.com/assets/img/devbootcamp-logo.png)
 
 Reference style:
-`![alt text for search engines][logo]`
-The above gives us: 
+`![alt text for search engines][logo]`<br>
+The above gives us: <br>
 ![alt text for search engines][logo]
 
-Then sometime later in the file:
+Then sometime later in the file you need to have:<br>
 `[logo]: http://devbootcamp.com/assets/img/devbootcamp-logo.png`
 [logo]: http://devbootcamp.com/assets/img/devbootcamp-logo.png
+
+---
 
 ###You Tube Videos
 You can include HTML in markdown and that's the best way to include a You-tube video. This is just a link to YouTube with a jpg preview.  Here is an example pointing to a video of my Sudoku challenge solution from week 2. I got it's width and height by right clicking on the video in youtube and selecting "get embed code".
