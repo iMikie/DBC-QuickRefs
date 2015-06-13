@@ -13,7 +13,7 @@ sf-dragonflies-2015
  
  
 ##Let's get started with Sinatra
-1. [Clone or fork the Sinatra Skeleton](https://github.com/sf-dragonflies-2015/sinatra-skeleton-mvc-challenge) to your local computer)
+1. [Clone or fork the Sinatra Skeleton](https://github.com/sf-dragonflies-2015/sinatra-skeleton-mvc-challenge) to your local computer
  * QuickRef: [See the Git and GitHub section (p. 14) of this] (https://github.com/iMikie/DBC-QuickRefs/blob/master/PDFs%20Latest/QuickRefs_Ruby_github_more.pdf)
   
 2. Create your own branch (so as to  make sure you don't later accidentally push to master.  Not necessary if you forked from GitHub.)
