@@ -58,4 +58,82 @@ gem install bundler
 8. Check out the app/Models and app/db directories: <br>
 ![Models and DB folder after rake:generate commands](images/models_and_db_folders.jpg)
 
-9. Now fill in your model objects in **app/models/** with validations and create your tables in files in **db/migrations**.
+9. Now fill create your table "migrations" using the stubs in **db/migrations** and fill in your model classes in **app/models/** with validations and associations. Here is what the migrations would look like for the above. If this is a mystery, [try this link.](http://edgeguides.rubyonrails.org/active_record_migrations.html)
+
+```ruby
+class CreateUsers < ActiveRecord::Migration
+  def change
+    create_table :users do |t|
+      t.string   :username, limit: 50
+      t.string   :email, limit: 50
+      t.string   :password_hash, limit: 50
+      t.string   :phone_number, limit: 24
+
+      t.timestamps
+    end
+  end
+end
+
+class CreatePerformances < ActiveRecord::Migration
+  def change
+    create_table  :performances do |t|
+      t.string    :title, limit: 50
+      t.date      :date
+      t.time      :performance_time
+      t.time      :call_time
+      t.string    :location
+
+      t.timestamps
+
+    end
+  end
+end
+
+class CreatePerformances-songs < ActiveRecord::Migration
+  def change
+    create_table :performances_songs do |t|
+      t.integer  :performance_id
+      t.integer  :song_id
+
+      t.timestamps
+    end
+  end
+end
+```
+
+8. Here's what the model objects would look like with validations and associations. If this is a mystery, [try this link](http://guides.rubyonrails.org/association_basics.html)
+```ruby
+class Song < ActiveRecord::Base
+  validates :song_number, :presence => true, :uniqueness => true
+  validates :title, :presence => true
+
+  has_many :performances_songs
+  has_many :performances, :through =>  :performances_songs    #this is how you do a many-to-many
+end
+
+class Performance < ActiveRecord::Base  
+  validates :title, :presence => true
+  validates :date, :presence => true
+
+  has_many :performances_songs             
+  has_many :songs, :through =>  :performances_songs           #this is how you do a many-to-many
+end
+
+class PerformancesSong < ActiveRecord::Base
+  validates :performance_id, :presence => true
+  validates :song_id, :presence => true
+
+  belongs_to :performance
+  belongs_to :song
+
+end
+
+class User < ActiveRecord::Base
+  include BCrypt
+
+  validates :username, :presence => true, :uniqueness => true
+  validates :email, :presence => true, :uniqueness => true
+  validates :phone_number, :presence => true
+  validates :password_hash, :presence => true
+end
+```
