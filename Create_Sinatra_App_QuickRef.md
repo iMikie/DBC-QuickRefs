@@ -48,11 +48,14 @@ gem install bundler
     rake generate:migration NAME='create_performances-songs'
     rake generate:migration NAME='create_users'
     ```
-Now let's create the Model files.  Note the lack of 's' on *PerformancesSong*.
+7. Now let's create the Model files.  Note the lack of 's' on *PerformancesSong*.
     ```sh
     rake generate:model NAME='Song'              # will create app/models/song.rb
     rake generate:model NAME='Performance'       # will create app/models/song.rb
     rake generate:model NAME='PerformancesSong'  # will create app/models/performances_song.rb, note: NOT: "performances_songs"
     rake generate:model NAME='User'              # will create app/models/song.rb
     ```
+8. Check out the app/Models and app/db directories <br>
+![Models and DB folder after rake:generate commands](images/models_and_db_folders.jpg)
 
+9. 
