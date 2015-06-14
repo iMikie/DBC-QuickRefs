@@ -55,7 +55,7 @@ gem install bundler
     rake generate:model NAME='PerformancesSong'  # will create app/models/performances_song.rb, note: NOT: "performances_songs"
     rake generate:model NAME='User'              # will create app/models/song.rb
     ```
-8. Check out the app/Models and app/db directories <br>
+8. Check out the app/Models and app/db directories: <br>
 ![Models and DB folder after rake:generate commands](images/models_and_db_folders.jpg)
 
-9. 
+9. Now fill in your model objects in **app/models/** with validations and create your tables in files in **db/migrations**.
