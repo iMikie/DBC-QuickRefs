@@ -145,3 +145,10 @@ class User < ActiveRecord::Base
   validates :password_hash, :presence => true
 end
 ```
+
+9. Now go ahead and rake your model: do your migrations to actually create the database and your parallel ruby classes.
+
+```sh
+be rake db:create
+be rake db:migrate
+```
