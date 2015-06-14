@@ -11,6 +11,8 @@ gem install bundler
   ```
 * Created your User Stories.
 * Created your database Schema.
+  *Here is a sample with a many-to-many
+    ![Sample Schema](images/schema.png)
  
  
 ##Let's get started with Sinatra
