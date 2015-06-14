@@ -41,18 +41,18 @@ gem install bundler
     ruby -v                #verify the switch
     ```
 
-6. Following your previously created database schema, let's create some tables.  Note how the names match the schema. 
+6. Following your previously created database schema, let's create some tables.  Note how the names match the schema and are related to each other. This is an ActiveRecord convention and is necessary or your Sinatra and Rails apps will break mysteriously.  Especially take note of the name of the junction (join) table and Model Class for performances-songs.
     ```sh
     rake generate:migration NAME='create_songs'
     rake generate:migration NAME='create_performances'
     rake generate:migration NAME='create_performances-songs'
     rake generate:migration NAME='create_users'
     ```
-Now let's create the Model files:
-```sh
-rake generate:model NAME='Song'              # will create app/models/song.rb
-rake generate:model NAME='Performance'       # will create app/models/song.rb
-rake generate:model NAME='PerformancesSong'  # will create app/models/performances_song.rb, note: NOT: "performances_songs"
-rake generate:model NAME='User'              # will create app/models/song.rb
-```
+Now let's create the Model files.  Note the lack of 's' on *PerformancesSong*.
+    ```sh
+    rake generate:model NAME='Song'              # will create app/models/song.rb
+    rake generate:model NAME='Performance'       # will create app/models/song.rb
+    rake generate:model NAME='PerformancesSong'  # will create app/models/performances_song.rb, note: NOT: "performances_songs"
+    rake generate:model NAME='User'              # will create app/models/song.rb
+    ```
 
