@@ -73,7 +73,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string   :username, limit: 50
       t.string   :email, limit: 50
-      t.string   :password_hash, limit: 50
+      t.string   :password_hash
       t.string   :phone_number, limit: 24
 
       t.timestamps
