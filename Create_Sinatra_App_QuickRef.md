@@ -11,10 +11,8 @@ gem install bundler
   ```
 * Created your User Stories.
 * Created your database Schema.
-  *Here is a sample schema with a many-to-many: performances have many songs, songs may be in many performances.
- <br>
 
-    ![Sample Schema](images/schema.png)
+
  
 ##Let's get started with Sinatra
 1. Clone or fork the Sinatra Skeleton [from this repository] (https://github.com/sf-dragonflies-2015/sinatra-skeleton-mvc-challenge)
