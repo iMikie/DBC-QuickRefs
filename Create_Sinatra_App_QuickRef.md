@@ -32,29 +32,39 @@ gem install bundler
     ```sh
     alias be="bundle exec"
     ```
-5. The gem file may require a version of ruby that you don't have.  You will have to switch versions of Ruby. If you don't know how to do this see [Install_Ruby_rbenv.md](https://github.com/iMikie/DBC-QuickRefs/blob/master/Install_Ruby_rbenv.md) Once you have rbenv: 
-    ```sh
-    ruby -v                #shows what version of ruby you are running
+5. The gem file may require a version of ruby that you don't have.  You will have to switch versions of Ruby. If the version mentioned listed in your *Gemfile* is very close to the ruby you have installed, you can try simply changing that line. 
+
+```sh
+	ruby '2.1.0' #=> 2.1.2
+```
+Or, you may have multiple versions of Ruby installed.  Tye * rbenv versions * at the terminal to see if you have rbenv installed. If you don't, type *rvm*.  I don't know rvm so if you don't have either on your machine check this out: [Install_Ruby_rbenv.md](https://github.com/iMikie/DBC-QuickRefs/blob/master/Install_Ruby_rbenv.md) Once you have rbenv: 
+
+```sh
+    ruby -v                #shows what version of ruby you are running<br>
     rbenv versions         #shows which versions of ruby you have installed
     rbenv install 2.1.0    #install ruby 2.1.0 if you don't have it already
     rbenv local 2.1.0      #switch to 2.1.0 (or whatever version)
     ruby -v                #verify the switch
-    ```
+```
 
 6. Following your previously created database schema, let's create some tables.  Note how the names match the schema and are related to each other. This is an ActiveRecord convention and is necessary or your Sinatra and Rails apps will break mysteriously.  Especially take note of the name of the junction (join) table and Model Class for performances-songs.
+
     ```sh
     rake generate:migration NAME='create_songs'
     rake generate:migration NAME='create_performances'
     rake generate:migration NAME='create_performances-songs'
     rake generate:migration NAME='create_users'
     ```
+    
 7. Now let's create the Model files.  Note the lack of 's' on *PerformancesSong*.
+
     ```sh
     rake generate:model NAME='Song'              # will create app/models/song.rb
     rake generate:model NAME='Performance'       # will create app/models/song.rb
     rake generate:model NAME='PerformancesSong'  # will create app/models/performances_song.rb, note: NOT: "performances_songs"
     rake generate:model NAME='User'              # will create app/models/song.rb
     ```
+    
 8. Check out the app/Models and app/db directories: <br>
 ![Models and DB folder after rake:generate commands](images/models_and_db_folders.jpg)
 
