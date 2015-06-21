@@ -12,6 +12,9 @@ gem install bundler
 * Created your User Stories.
 * Created your database Schema.
 
+From the example in the SQL QuickReference we have this schema:
+
+![Bands - Musicians](/images/schema.jpg)
 
  
 ##Let's get started with Sinatra
@@ -43,6 +46,8 @@ gem install bundler
     ```
 
 6. Following our previously created database schema, let's create some tables.  Note how the names match the schema and are related to each other. This is an ActiveRecord convention and is necessary or your Sinatra and Rails apps will break mysteriously.  Especially take note of the name of the junction (join) table and Model Class for performances-songs.
+  **Table names are plural**
+
  
     ```sh
     rake generate:migration NAME='create_songs'               #create db/migrate/20150613183845_create_songs.rb
@@ -52,7 +57,7 @@ gem install bundler
     ```
     
 7. Now let's create the Model files.  Note the lack of 's' on *PerformancesSong*.
-
+  **Note: model names are singular**
     ```sh
     rake generate:model NAME='Song'              # will create app/models/song.rb
     rake generate:model NAME='Performance'       # will create app/models/song.rb
@@ -94,7 +99,7 @@ class CreatePerformances < ActiveRecord::Migration
   end
 end
 
-class CreatePerformances-songs < ActiveRecord::Migration
+class CreatePerformancesSongs < ActiveRecord::Migration
   def change
     create_table :performances_songs do |t|
       t.integer  :performance_id
@@ -150,3 +155,13 @@ end
 be rake db:create
 be rake db:migrate
 ```
+
+10. Now you should be able to do a 
+
+```sh
+be shotgun
+```
+
+and, opening a second terminal, you shoud be able to enter ActiveRecord commands to take a look at your database.
+
+
