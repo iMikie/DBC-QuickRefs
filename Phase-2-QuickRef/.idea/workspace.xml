@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ed07514-f44a-4f5d-ae4e-1c40d0584942" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Active-Record.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Terminal.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../images/schema.png" afterPath="$PROJECT_DIR$/../images/schema.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Sinatra-And-ActiveRecord.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sinatra-ActiveRecord/sinatra-skeleton-mvc-challenge" afterPath="$PROJECT_DIR$/../Sinatra-ActiveRecord/sinatra-skeleton-mvc-challenge" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Create_Sinatra_App_QuickRef.md" afterPath="$PROJECT_DIR$/../Create_Sinatra_App_QuickRef.md" />
     </list>
     <ignored path="Phase-2-QuickRef.iws" />
@@ -232,7 +229,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3093" y="338" width="2045" height="1342" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
