@@ -13,7 +13,8 @@ heroku create     #will provide the heroku url (with name of app) and git heroku
 git remote –v
 ```
 #### 3.	You can rename your git heroku url
-  1.	Remove the remote 
+  0. go to your heroku account and rename your application
+  1.	Back in the command line: remove the remote 
   ```
   git remote remove heroku
   ```
