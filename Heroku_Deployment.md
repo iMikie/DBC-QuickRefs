@@ -17,7 +17,7 @@ git remote –v
   ```
   git remote remove heroku
   ```
-  2.	Add in the new git heroku url with your new name
+  2.	Add in the new git heroku url with your new name, must be all lowercase.
   ```
   heroku git:remote –a [new heroku url name]
   ```
