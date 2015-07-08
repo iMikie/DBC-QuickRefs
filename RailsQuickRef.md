@@ -331,5 +331,21 @@ canadian_anthem = Song.create(song_number: 1075, arranger_one: "Herb Goodrich", 
 
 as_game.songs << canadian_anthem
 ```
+###Making a change
+
+I put too tight a limit on one of my fields so I need to generate a change migration.  
+
+```sh
+bin/rails generate migration ChangeTTBBLengthLimit
+```
+Here's the finished migration:
+```ruby
+class ChangeTtbbLengthLimit < ActiveRecord::Migration
+  def change
+    change_column :songs, :voicing, :string, :limit => 64
+  end
+end
+```
+
 
 
