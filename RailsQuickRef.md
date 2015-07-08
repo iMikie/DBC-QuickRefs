@@ -15,10 +15,13 @@ Update    | edit (form)   | get  | edit_user_path(user) | /users/:id/edit  | def
 Delete   | delete record  | delete | user, method: :delete  |  users/:id  | def delete |
 
 
-*Note that Put, Delete, don't actually exist and are faked by hidden fields in the form by rails.*
-Example: 
-```erb
-<%= link_to "text", tweet.zombie %> #model instance = show
+*Note that Put, Delete, don't actually exist and are faked by hidden fields in the form by rails.*<br>
+
+Rails can generate links for you without hard coding.  I'm not sure this is actually any easier but here's an example of how to use the link_to URL GenCode listed above.
+<br>
+
+```ruby
+<%= link_to "Author", tweet.zombie %> 
 <%= link_to "Edit", edit_tweet_path(tweet) %>
 <%= link_to "Destroy", tweet, method: :delete %>
 ```
