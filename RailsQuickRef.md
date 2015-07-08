@@ -131,5 +131,53 @@ class UsersController < ApplicationController
 end
   ```
 
+####User Model
+Now it's time to create the database table for Users and the Model.  Unlike Sinatra this is done at the same time as the Model.
+
+```sh
+$ bin/rails generate model User username:string email:string password_hash:string phone_number:string
+```
+
+This creates a bare bones db migration file to which I've added limits and an empty Model file to which I've added validations and the BCrypt password stuff.  
+
+**Data Table for users**
+```ruby
+class CreateUsers < ActiveRecord::Migration
+  def change
+    create_table :users do |t|
+      t.string :username,  limit: 50
+      t.string :email, limit: 50
+      t.string :password_hash
+      t.string :phone_number, limit: 24
+
+      t.timestamps null: false
+    end
+  end
+end
+```
+
+**Model for User **
+
+```ruby
+class User < ActiveRecord::Base
+  include BCrypt
+
+  validates :username, :presence => true, :uniqueness => true
+  validates :email, :presence => true, :uniqueness => true
+  validates :phone_number, :presence => true
+  validates :password, :presence => true
+  validates :password, length: { minimum: 6 }
+
+  def password
+    @password ||= Password.new(password_hash)
+  end
+
+  def password=(new_password)
+    @password = Password.create(new_password)
+    self.password_hash = @password
+  end
+  
+end
+```
 
 
