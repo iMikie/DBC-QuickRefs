@@ -318,7 +318,7 @@ import_CSV_of_songs
 
 as_game = Performance.create( title: "Oakland A's game",
                     date: Date.new(2015, 7, 10),
-                    performand_time: Time.new(2015, 7, 10, 19, 05, 0),
+                    performance_time: Time.new(2015, 7, 10, 19, 05, 0),
                     call_time: Time.new(2015, 7, 10, 17, 0, 0),
                     location: "Suites entrance which is located in between  the A's coliseum and the Oracle Arena where the Warriors play. It's on the top of the walkway",
                     event_leader: "Saverio DeLuca",
@@ -346,6 +346,29 @@ class ChangeTtbbLengthLimit < ActiveRecord::Migration
   end
 end
 ```
+###Getting things to work
 
+OK, so the seeding went well.  Just had to change the Voicing field length.  Now it's time to get something running.  
+
+My home page will eventually be an advertisement for the singing group's next performance so I'll create a welcome page.  Let's see about creating a Welcome controller.
+
+```ruby
+bin/rails generate controller welcome index
+```
+ 
+ This is creating a bunch of files some of which I'll delete:
+ 
+ ```sh
+ create  app/controllers/welcome_controller.rb
+create the route  get 'welcome/index'
+create    app/views/welcome
+create    app/views/welcome/index.html.erb
+create    test/controllers/welcome_controller_test.rb
+create    app/helpers/welcome_helper.rb
+remove the following:
+   create      app/assets/javascripts/welcome.js.coffee
+   invoke    scss
+   create      app/assets/stylesheets/welcome.css.scss
+```
 
 
