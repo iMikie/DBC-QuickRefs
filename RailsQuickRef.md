@@ -665,3 +665,5 @@ You can see the final source code here: [repo](https://github.com/thebucknerlife
     </body>
     </html>
     ```
+###Controller
+rails generate controller performances
