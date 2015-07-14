@@ -665,5 +665,14 @@ You can see the final source code here: [repo](https://github.com/thebucknerlife
     </body>
     </html>
     ```
-###Controller
-rails generate controller performances
+###Routes
+
+Rails.application.routes.draw do
+ 
+  resources :articles
+ 
+  root 'welcome#index'
+end
+
+
+###New Controller
