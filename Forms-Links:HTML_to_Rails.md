@@ -5,9 +5,11 @@ With Rails you will have to master ***form_tag*** and ***link_to*** which are so
 Confession: I didn't completely master HTML forms the first time around. Maybe you're the same.  Here's a quick-ref, if you need more, kindle the [Duckett Book](http://www.htmlandcssbook.com).)  
 
 ##HTML Forms Quick Ref
-HTML forms consist of ***\<form\>*** tags containing ***\<label\> - \<input\>*** tag pairs, ending with a button that sends the form. The *\<label\>* tag is basically a *\<p\>* paragraph text tag but also tells the browser to vocalize the text for vision impaired users.  Every *\<input\>* tag has a *name* attribute that becomes its variable name when sent to the server.  That's basically it.
-
-The *\<input\>* tag is placed either inside the *\<label\>* tag or besides it.
+* HTML forms consist of ***\<form\>*** tags containing ***\<label\>*** and *** \<input\>*** tags
+* HTML forms end with a button that sends the form. 
+* The *\<label\>* tag is just a *\<p\>* paragraph text tag that tells the browser to vocalize for vision impaired users.  
+* Every *\<input\>* tag has a *name* attribute that becomes its variable name when sent to the server.  
+* The *\<input\>* tag is placed either inside the *\<label\>* tag or besides it. Take a look:
 
 ```html
 <form> tag
