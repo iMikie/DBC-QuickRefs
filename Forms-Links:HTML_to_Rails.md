@@ -2,9 +2,9 @@
 
 With Rails you will have to master ***form_tag*** and ***link_to*** which are so bloody confusing that no one does. Except you will, now.
 
-Confession: I didn't completely master HTML forms and cut and paste a lot. Maybe you're the same.  Here's a quick-ref, if you need more, kindle the [Duckett Book](http://www.htmlandcssbook.com).)  
+Confession: I didn't completely master HTML forms the first time around. Maybe you're the same.  Here's a quick-ref, if you need more, kindle the [Duckett Book](http://www.htmlandcssbook.com).)  
 
-##HTML forms quick ref
+##HTML Forms Quick Ref
 HTML forms consist of ***\<form\>*** tags containing ***\<label\> - \<input\>*** tag pairs, ending with a button that sends the form. The *\<label\>* tag is basically a *\<p\>* paragraph text tag but also tells the browser to vocalize the text for vision impaired users.  Every *\<input\>* tag has a *name* attribute that becomes its variable name when sent to the server.  That's basically it.
 
 The *\<input\>* tag is placed either inside the *\<label\>* tag or besides it.
@@ -20,7 +20,7 @@ The *\<input\>* tag is placed either inside the *\<label\>* tag or besides it.
 The button that dispatches the form to the server can be an input tag of type submet, or type image, or a button tag with both.
 
 ###Mother of all forms
-Here's all the form elements in one form.
+Here's all the form elements in one form.  When all else fails, copy from here.
 
 ```html
 <body>
@@ -84,7 +84,7 @@ Here's all the form elements in one form.
 ####A file upload form would look like this:
 
 ```html
-<form action="http://www.example.com/files/new" method="post">                      <!--file upload -->
+<form action="http://www.example.com/files/new" method="post">              <!--file upload -->
     <p> Upload the file: </p>
     <input type="file" name="document" /> <br>
     <input type="submit" value="Upload" />
@@ -94,17 +94,17 @@ Here's all the form elements in one form.
 ####Instead of the submit buttons above, we could use:
 
 ```html
-An image button:                                                                  <!--image button -->
+An image button:                                                             <!--image button -->
     <input type="image" src="images/do_it_now.jpg" width="40" height="20" />
 
-or a image-text button:                                                           <!--<button> -->
+or a image-text button:                                                      <!--<button> -->
 
     <button><img src="images/forget_it.jpg" alt="Just forget it" width="40" height="20"
     </button>
     
 and finally, we'll have use for hidden fields with Rails when we need a value included with the form's result:
 
-    <input type="hidden" name="userid" value="5" />                               <!--hidden field -->
+    <input type="hidden" name="userid" value="5" />                          <!--hidden field -->
 
 ```
 
