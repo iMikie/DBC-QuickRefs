@@ -4,32 +4,55 @@ With Rails you will have to master ***form_tag*** and ***link_to*** which are so
 
 Confession: I didn't completely master HTML forms and cut and paste a lot. Maybe you're the same.  Here's a quick-ref, if you need more, kindle the [Duckett Book](http://www.htmlandcssbook.com).)  
 
-In short, forms consist of ***\<form\>*** tags containing ***\<label\> - \<input\>*** tag pairs. The ***\<input\>*** tag is either inside the ***\<label\>*** tag or beside it.  Every input tag has a *name* attribute that becomes its variable name when sent to the server. That's all there is to it, really.
+In short, forms consist of ***\<form\>*** tags containing ***\<label\> - \<input\>*** tag pairs, ending with a button that sends the form. The *\<label\>* tag is basically a *\<p\>* paragraph text tag but also tells the browser to vocalize the text for vision impaired users.  Every *\<input\>* tag has a *name* attribute that becomes its variable name when sent to the server.  That's basically it.
 
-BTW, the *\<label\>* tag is basically a *\<p\>* paragraph text tag,  but also tells the browser to vocalize the text for vision impaired users.  
-
-You either... <br>
-1.  put the *\<input\>* tag inside the *\<label\>...\</label\>* tag -or- 
-2.  give the *\<input\>* tag a CSS *id="some_name"* and the *\<label\>* tag a *for="some_id_name"\>* attribute. 
+The *\<input\>* tag is placed either inside the *\<label\>* tag or besides it.
 
 ```html
 <form> tag
     <label>Username: <input type="text" name="username"/>  <!-- input tag is inside the lable tag -->
     
-    <label for="passwd"> Password: \</label>                <!-- here the label and input tag are separated, so -->
+    <label for="passwd"> Password: </label>                <!-- here the label and input tag are separated, so -->
     <input id="passwd" type="password" name="password"/>    <!-- use *for* in label and *id* attribute in input tag -->
+</form>
+```
+The button that dispatches the form to the server can be an input tag of type submet, or type image, or a button tag with both.
+
+###Types of ***\<input\>*** tags: 
+text, textarea, password, radio, checkbox, select (drop-down menu or scrolling list), file input, fieldset (with optional legend), and hidden tags. Forms are submitted via a button and can even consist only of a single button.  Button types are: submit button, regular button, image button,combo text and image button.   
+
+Here the different types of form elements:
+
+```html
+<form action="http://www.example.com/some_crud">
+  <label> Username: 
+    <input type="text" name="username" />
+  </label>
+  <label> Password:  
+    <input type="password" name="password" />
+  </label>  
+  <label> What's your opinion of HTML forms?  <!--note <textarea> is inconsistent: should be <input type="textarea"> -->
+     <textarea name="opinion" cols="30" rows="4">        
+       Enter your comment here.
+     </textarea>
+  </label>
+  <p> Radio Buttons- what sucks the most?
+  <!-- now using the other label format -->
+  <label for="css-radio"> CSS </label>
+  <input id="css-radio" type="radio" name="language" value="css" checked="checked" />
+    
+  <label for="javascirpt-radio"> Javascript </label>
+  <input type="radio" name="language" value="javascript" />
+  
+  <label for="java-radio"> Java </label>
+  <input type="radio" name="language" value="java" />
+   </p>
+   
+   
+
+  
+  
 </form>
 ```
 
 
-Types of ***\<input\>*** tags: text, textarea, password, radio, checkbox, select (drop-down menu or scrolling list), file input, fieldset (with optional legend), and hidden tags. Forms are submitted via a button and can even consist only of a single button.  Button types are: submit button, regular button, image button,combo text and image button.   
-
-Here the different types of form elements
-
-
-```html
-<form action="http://www.example.com/some_crud">
-  <label> What do you listen on? </label>
-  <input type="text" 
-  <select
-  
