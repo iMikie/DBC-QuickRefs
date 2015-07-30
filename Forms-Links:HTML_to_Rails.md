@@ -4,7 +4,8 @@ With Rails you will have to master ***form_tag*** and ***link_to*** which are so
 
 Confession: I didn't completely master HTML forms and cut and paste a lot. Maybe you're the same.  Here's a quick-ref, if you need more, kindle the [Duckett Book](http://www.htmlandcssbook.com).)  
 
-In short, forms consist of ***\<form\>*** tags containing ***\<label\> - \<input\>*** tag pairs, ending with a button that sends the form. The *\<label\>* tag is basically a *\<p\>* paragraph text tag but also tells the browser to vocalize the text for vision impaired users.  Every *\<input\>* tag has a *name* attribute that becomes its variable name when sent to the server.  That's basically it.
+##HTML forms quick ref
+HTML forms consist of ***\<form\>*** tags containing ***\<label\> - \<input\>*** tag pairs, ending with a button that sends the form. The *\<label\>* tag is basically a *\<p\>* paragraph text tag but also tells the browser to vocalize the text for vision impaired users.  Every *\<input\>* tag has a *name* attribute that becomes its variable name when sent to the server.  That's basically it.
 
 The *\<input\>* tag is placed either inside the *\<label\>* tag or besides it.
 
@@ -85,7 +86,7 @@ Here the different types of form elements:
 ####A file upload form would look like this:
 
 ```html
-<form action="http://www.example.com/files/new" method="post"                      <!--file upload -->
+<form action="http://www.example.com/files/new" method="post">                      <!--file upload -->
     <p> Upload the file: </p>
     <input type="file" name="document" /> <br>
     <input type="submit" value="Upload" />
