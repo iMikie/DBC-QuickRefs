@@ -8,9 +8,10 @@ In short, forms consist of ***\<form\>*** tags containing ***\<label\> - \<input
 
 ```html
 <form> tag
-    <label>Password <input type="password" name="password"/>  <!--input tag inside lable tag -->
-    <label for="username"> Username \</label>  <!-- the label and input tag are separated-->
-    <input id="username" type="text"/>   <!-- , use id= on input tag -->
+    <label>Username: <input type="text" name="username"/>  <!-- input tag is inside the lable tag -->
+    
+    <label for="passwd"> Password: \</label>        <!-- here the label and input tag are separated, so, -->
+    <input id="passwd" type="password"/>            <!-- use *for* in label and *id* attribute in input tag -->
 </form>
 ```
 The <label> tag is basically a <p> paragraph text tag,  but also tells the browser to vocalize the text for vision impared users.  To pair the label with an <input> tag,  put the <input> tag inside the <label>...</label> tag or give the <input> tag a CSS id attribute and use <label for="some_id_name">. 
