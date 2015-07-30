@@ -38,20 +38,37 @@ Here the different types of form elements:
   </label>
   <p> Radio Buttons- what sucks the most?
   <!-- now using the other label format -->
-  <label for="css-radio"> CSS </label>
-  <input id="css-radio" type="radio" name="language" value="css" checked="checked" />
+    <label for="css-radio"> CSS </label>
+    <input id="css-radio" type="radio" name="language" value="css" checked="checked" />
     
-  <label for="javascirpt-radio"> Javascript </label>
-  <input type="radio" name="language" value="javascript" />
+    <label for="javascirpt-radio"> Javascript </label>
+    <input type="radio" name="language" value="javascript" />
   
-  <label for="java-radio"> Java </label>
-  <input type="radio" name="language" value="java" />
+    <label for="java-radio"> Java </label>
+    <input type="radio" name="language" value="java" />
    </p>
-   
-   
-
-  
-  
+   <p> Checkboxes: what languages do you like? <!-- note: I'm now leaving out <label> tags to make the rest readable -->
+    <br>
+    <input type="checkbox: name="good-language" value="ruby" checked="checked" /> Ruby
+    <input type="checkbox: name="good-language" value="python" /> Python
+    <input type="checkbox: name="good-language" value="livescript" /> Livescript
+  </p>
+  <p> Drop-down menu - what is your favorite computer?
+    <select name="computers">
+        <option value="mbp">Mac Book Pro </option>
+        <option value="mba">Mac Book Air </option>
+        <option value="mpro">Mac Pro </option>
+    </select>
+  </p>
+  <p> Multiple Select Box: what computers do you hate? (You can select more than one, use cmd-key on Mac, ctrl PCs)
+  </p>
+    <select name="computers" size="3" multiple="multiple">
+        <option value="dell" selected="selected"> Dell</option>
+        <option value="hp"> HP</option>
+        <option value="lenovo"> Lenovo</option>
+        <option value="asus"> ASUS</option>
+    <select>
+    <input type="submit" name="whew" value="Whew"
 </form>
 ```
 
