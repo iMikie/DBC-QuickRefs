@@ -80,12 +80,12 @@ For non breaking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces inside a line &nbsp;
 
 You can also use '+' and '-' instead of '*'
 ####Ordered Lists
-1. Item 1     &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   `1. Item 1`
-2. item 2
+1. Item 1     &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;   `1. Item 1`
+2. Item 2     &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  `2. Item 2`
   1. Indented 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   `<tab>1. Indented 1`
-  2. Indented 2
+  2. Indented 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   `<tab>2. Indented 2`
     1. Twice Indented 1&nbsp; &nbsp; &nbsp; &nbsp;   `<tab><tab>1. Twice Indented 1`
-    2. Indented 2
+    2. Also indented 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `<tab><tab>2. Also indented 2`
 
 ---
 
