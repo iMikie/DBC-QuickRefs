@@ -2,7 +2,7 @@
 
 With Rails you will have to master *form_tag* and *link_to* which are so bloody confusing that no one does. Except you will, now.
 
-I really didn't master forms in HTML and maybe you didn't either.  (Best comprehensive source: the [Duckett Book](http://www.htmlandcssbook.com).)  
+I really didn't master forms in HTML and maybe you didn't either.  (If you need a more in-depth review than what's here, kindle the [Duckett Book](http://www.htmlandcssbook.com).)  
 
 In short, forms consist of a \<form\> tags containing \<label\> - \<input\> tag pairs.
 
