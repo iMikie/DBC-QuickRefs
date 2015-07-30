@@ -19,10 +19,8 @@ The *\<input\>* tag is placed either inside the *\<label\>* tag or besides it.
 ```
 The button that dispatches the form to the server can be an input tag of type submet, or type image, or a button tag with both.
 
-###Types of ***\<input\>*** tags: 
-text, textarea, password, radio, checkbox, select (drop-down menu or scrolling list), file input, fieldset (with optional legend), and hidden tags. Forms are submitted via a button and can even consist only of a single button.  Button types are: submit button, regular button, image button,combo text and image button.   
-
-Here the different types of form elements:
+###Mother of all forms
+Here's all the form elements in one form.
 
 ```html
 <body>
@@ -109,6 +107,10 @@ and finally, we'll have use for hidden fields with Rails when we need a value in
     <input type="hidden" name="userid" value="5" />                               <!--hidden field -->
 
 ```
+
+##OK, What about Rails?
     
+Rails messes with all of this so embrace the confusion.
+
 
 
