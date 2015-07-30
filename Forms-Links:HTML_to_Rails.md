@@ -28,20 +28,20 @@ Here the different types of form elements:
 
 <form action="http://www.example.com/some_crud">
     <label> Username:
-        <input type="text" name="username"/>
+        <input type="text" name="username"/>                              <!--text -->       
     </label><br>
-    <label> Password:
-        <input type="password" name="password"/>
+    <label> Password:                                    
+        <input type="password" name="password"/>                          <!--password -->
     </label><br><br>
 
     <label> What's your opinion of HTML forms?<br>
         <!--note <textarea> is inconsistent: should be <input type="textarea"> -->
-     <textarea name="opinion" cols="30" rows="4">
+     <textarea name="opinion" cols="30" rows="4">                         <!--textarea -->
        Enter your comment here.
      </textarea>
     </label>
 
-    <p> Radio Buttons- what sucks the most?<br>
+    <p> Radio Buttons- what sucks the most?<br>                           <!--radio buttons -->
         <!-- now using the other label format -->
         <input id="css-radio" type="radio" name="language" value="css" checked="checked"/>
         <label for="css-radio"> CSS </label> <br>
@@ -53,7 +53,7 @@ Here the different types of form elements:
         <label for="java-radio"> Java </label><br>
     </p>
 
-    <p> Checkboxes: what languages do you like?
+    <p> Checkboxes: what languages do you like?                            <!--check boxes -->
         <!-- note: I'm now leaving out <label> tags to make the rest readable -->
         <br>
         <input type="checkbox" name="good-language" value="ruby" checked="checked"/> Ruby
@@ -61,13 +61,13 @@ Here the different types of form elements:
         <input type="checkbox" name="good-language" value="livescript"/> Livescript
     </p>
 
-    <p> Drop-down menu - what is your favorite computer?<br>
+    <p> Drop-down menu - what is your favorite computer?<br>               <!--drop down menu -->
         <select name="computers">
             <option value="mbp">Mac Book Pro</option>
             <option value="mba">Mac Book Air</option>
             <option value="mpro">Mac Pro</option>
         </select>
-    </p>
+    </p>                                                                   <!--multi-select box -->
     <p> Multiple Select Box: what computers do you hate? (You can select more than one, use cmd-key on Mac, ctrl PCs)
     </p>
     <select name="computers" size="3" multiple="multiple">
@@ -85,7 +85,7 @@ Here the different types of form elements:
 ####A file upload form would look like this:
 
 ```html
-<form action="http://www.example.com/files/new" method="post"
+<form action="http://www.example.com/files/new" method="post"                      <!--file upload -->
     <p> Upload the file: </p>
     <input type="file" name="document" /> <br>
     <input type="submit" value="Upload" />
@@ -95,17 +95,17 @@ Here the different types of form elements:
 ####Instead of the submit buttons above, we could use:
 
 ```html
-An image button:
+An image button:                                                                  <!--image button -->
     <input type="image" src="images/do_it_now.jpg" width="40" height="20" />
 
-or a image-text button:
+or a image-text button:                                                           <!--<button> -->
 
     <button><img src="images/forget_it.jpg" alt="Just forget it" width="40" height="20"
     </button>
     
 and finally, we'll have use for hidden fields with Rails when we need a value included with the form's result:
 
-    <input type="hidden" name="userid" value="5" />
+    <input type="hidden" name="userid" value="5" />                               <!--hidden field -->
 
 ```
     
