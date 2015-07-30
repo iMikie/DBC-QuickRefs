@@ -68,8 +68,34 @@ Here the different types of form elements:
         <option value="lenovo"> Lenovo</option>
         <option value="asus"> ASUS</option>
     <select>
-    <input type="submit" name="whew" value="Whew"
+    <input type="submit" name="whew" value="Whew" />
 </form>
 ```
+
+###A file upload form would look like this:
+
+<form action="http://www.example.com/files/new" method="post"
+    <p> Upload the file: </p>
+    <input type="file" name="document" /> <br>
+    <input type="submit" value="Upload" />
+</form>
+```
+Instead of the submit buttons above, we could use:
+
+```html
+An image button:
+    <input type="image" src="images/do_it_now.jpg" width="40" height="20" />
+
+or a <button> button:
+
+    <button><img src="images/forget_it.jpg" alt="Just forget it" width="40" height="20"
+    </button>
+    
+and finally, we'll have use for hidden fields with Rails:
+
+<input type="hidden" name="userid" value="5" />
+
+```
+    
 
 
