@@ -72,28 +72,30 @@ Here the different types of form elements:
 </form>
 ```
 
-###A file upload form would look like this:
+####A file upload form would look like this:
 
+```html
 <form action="http://www.example.com/files/new" method="post"
     <p> Upload the file: </p>
     <input type="file" name="document" /> <br>
     <input type="submit" value="Upload" />
 </form>
 ```
-Instead of the submit buttons above, we could use:
+
+####Instead of the submit buttons above, we could use:
 
 ```html
 An image button:
     <input type="image" src="images/do_it_now.jpg" width="40" height="20" />
 
-or a <button> button:
+or a image-text button:
 
     <button><img src="images/forget_it.jpg" alt="Just forget it" width="40" height="20"
     </button>
     
-and finally, we'll have use for hidden fields with Rails:
+and finally, we'll have use for hidden fields with Rails when we need a value included with the form's result:
 
-<input type="hidden" name="userid" value="5" />
+    <input type="hidden" name="userid" value="5" />
 
 ```
     
