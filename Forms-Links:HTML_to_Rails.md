@@ -24,52 +24,62 @@ text, textarea, password, radio, checkbox, select (drop-down menu or scrolling l
 Here the different types of form elements:
 
 ```html
+<body>
+
 <form action="http://www.example.com/some_crud">
-  <label> Username: 
-    <input type="text" name="username" />
-  </label>
-  <label> Password:  
-    <input type="password" name="password" />
-  </label>  
-  <label> What's your opinion of HTML forms?  <!--note <textarea> is inconsistent: should be <input type="textarea"> -->
-     <textarea name="opinion" cols="30" rows="4">        
+    <label> Username:
+        <input type="text" name="username"/>
+    </label><br>
+    <label> Password:
+        <input type="password" name="password"/>
+    </label><br><br>
+
+    <label> What's your opinion of HTML forms?<br>
+        <!--note <textarea> is inconsistent: should be <input type="textarea"> -->
+     <textarea name="opinion" cols="30" rows="4">
        Enter your comment here.
      </textarea>
-  </label>
-  <p> Radio Buttons- what sucks the most?
-  <!-- now using the other label format -->
-    <label for="css-radio"> CSS </label>
-    <input id="css-radio" type="radio" name="language" value="css" checked="checked" />
-    
-    <label for="javascirpt-radio"> Javascript </label>
-    <input type="radio" name="language" value="javascript" />
-  
-    <label for="java-radio"> Java </label>
-    <input type="radio" name="language" value="java" />
-   </p>
-   <p> Checkboxes: what languages do you like? <!-- note: I'm now leaving out <label> tags to make the rest readable -->
-    <br>
-    <input type="checkbox: name="good-language" value="ruby" checked="checked" /> Ruby
-    <input type="checkbox: name="good-language" value="python" /> Python
-    <input type="checkbox: name="good-language" value="livescript" /> Livescript
-  </p>
-  <p> Drop-down menu - what is your favorite computer?
-    <select name="computers">
-        <option value="mbp">Mac Book Pro </option>
-        <option value="mba">Mac Book Air </option>
-        <option value="mpro">Mac Pro </option>
-    </select>
-  </p>
-  <p> Multiple Select Box: what computers do you hate? (You can select more than one, use cmd-key on Mac, ctrl PCs)
-  </p>
+    </label>
+
+    <p> Radio Buttons- what sucks the most?<br>
+        <!-- now using the other label format -->
+        <input id="css-radio" type="radio" name="language" value="css" checked="checked"/>
+        <label for="css-radio"> CSS </label> <br>
+
+        <input id="javascript-radio" type="radio" name="language" value="javascript"/>
+        <label for="javascript-radio"> Javascript </label><br>
+
+        <input id="java-radio" type="radio" name="language" value="java"/>
+        <label for="java-radio"> Java </label><br>
+    </p>
+
+    <p> Checkboxes: what languages do you like?
+        <!-- note: I'm now leaving out <label> tags to make the rest readable -->
+        <br>
+        <input type="checkbox" name="good-language" value="ruby" checked="checked"/> Ruby
+        <input type="checkbox" name="good-language" value="python"/> Python
+        <input type="checkbox" name="good-language" value="livescript"/> Livescript
+    </p>
+
+    <p> Drop-down menu - what is your favorite computer?<br>
+        <select name="computers">
+            <option value="mbp">Mac Book Pro</option>
+            <option value="mba">Mac Book Air</option>
+            <option value="mpro">Mac Pro</option>
+        </select>
+    </p>
+    <p> Multiple Select Box: what computers do you hate? (You can select more than one, use cmd-key on Mac, ctrl PCs)
+    </p>
     <select name="computers" size="3" multiple="multiple">
         <option value="dell" selected="selected"> Dell</option>
         <option value="hp"> HP</option>
         <option value="lenovo"> Lenovo</option>
         <option value="asus"> ASUS</option>
-    <select>
-    <input type="submit" name="whew" value="Whew" />
+    </select><br><br>
+    <input type="submit" name="whew" value="Whew, Submit already"/>
 </form>
+
+</body>
 ```
 
 ####A file upload form would look like this:
