@@ -45,24 +45,22 @@ From the example in the SQL QuickReference we have this schema:
     ruby -v                #verify the switch
     ```
 
-6. Following our previously created database schema, let's create some tables.  Note how the names match the schema and are related to each other. This is an ActiveRecord convention and is necessary or your Sinatra and Rails apps will break mysteriously.  Especially take note of the name of the junction (join) table and Model Class for performances-songs.
+6. Following our previously created database schema, let's create some tables.  Note how the names match the schema and are related to each other. This is an ActiveRecord convention and is necessary or your Sinatra and Rails apps will break mysteriously.  Especially take note of the name of the junction (join) table band_musicians, and Model Class for performance-songs.
   **Table names are plural**
 
  
     ```sh
-    rake generate:migration NAME='create_songs'               #create db/migrate/20150613183845_create_songs.rb
-    rake generate:migration NAME='create_performances'        #create db/migrate/20150613183853_create_performances.rb
-    rake generate:migration NAME='create_performances-songs'  #create db/migrate/20150613183946_create_performances_songs.rb
-    rake generate:migration NAME='create_users'               #will create db/migrate/20150613183953_create_users.rb
+    rake generate:migration NAME='create_bands'               #create db/migrate/20150613183845_create_bands.rb
+    rake generate:migration NAME='create_musicians'        #create db/migrate/20150613183853_create_musicians.rb
+    rake generate:migration NAME='create_band_musicians'  #create db/migrate/20150613183946_create_bands_musicians.rb
     ```
     
 7. Now let's create the Model files.  Note the lack of 's' on *PerformancesSong*.
   **Note: model names are singular**
     ```sh
-    rake generate:model NAME='Song'              # will create app/models/song.rb
-    rake generate:model NAME='Performance'       # will create app/models/song.rb
-    rake generate:model NAME='PerformancesSong'  # will create app/models/performances_song.rb, note: NOT: "performances_songs"
-    rake generate:model NAME='User'              # will create app/models/song.rb
+    rake generate:model NAME='Band'              # will create app/models/band.rb
+    rake generate:model NAME='Musician'       # will create app/models/musician.rb
+    rake generate:model NAME='BandsMusician'  # will create app/models/bands_musician.rb, note: NOT: "bands_musicians"
     ```
     
 8. Check out the files in the app/Models and app/db directories that were created for you: <br>
@@ -71,40 +69,36 @@ From the example in the SQL QuickReference we have this schema:
 9. Now fill create your table "migrations" using the stubs in **db/migrations** and fill in your model classes in **app/models/** with validations and associations. Here is what the migrations would look like for the above. If this is a mystery, [try this link.](http://edgeguides.rubyonrails.org/active_record_migrations.html)
 
 ```ruby
-class CreateUsers < ActiveRecord::Migration
+class CreateBands < ActiveRecord::Migration
   def change
-    create_table :users do |t|
-      t.string   :username, limit: 50
-      t.string   :email, limit: 50
-      t.string   :password_hash
-      t.string   :phone_number, limit: 24
-
+    create_table :bands do |t|
+      t.string :name, limit: 50
+      t.string :most_popular_album, limit: 50
+      t.string :record_label, limit: 50
+      t.string :ASCAP, limit: 50
+      
       t.timestamps
     end
   end
 end
-
-class CreatePerformances < ActiveRecord::Migration
+class CreateMusicians < ActiveRecord::Migration
   def change
-    create_table  :performances do |t|
-      t.string    :title, limit: 50
-      t.date      :date
-      t.time      :performance_time
-      t.time      :call_time
-      t.string    :location
-
+    create_table :musicians do |t|
+      t.string :name, limit: 50
+      t.string :status, limit: 25
+      
       t.timestamps
-
     end
   end
 end
-
-class CreatePerformancesSongs < ActiveRecord::Migration
+#Note: table names in migrations are plural.  if compound, then singular_plural, or just rename the table like "projects" below
+#note: class names are singular
+class Project < ActiveRecord::Migration
   def change
-    create_table :performances_songs do |t|
-      t.integer  :performance_id
-      t.integer  :song_id
-
+    create_table :projects do |t|
+      t.references   :band_id
+      t.references   :musician_id
+      
       t.timestamps
     end
   end
@@ -152,6 +146,7 @@ end
 9. Now go ahead and rake your model: do your migrations to actually create the database and your parallel ruby classes.
 
 ```sh
+be rake -T
 be rake db:create
 be rake db:migrate
 ```
@@ -165,3 +160,8 @@ be shotgun
 and, opening a second terminal, you shoud be able to enter ActiveRecord commands to take a look at your database.
 
 
+
+@order = @customer.orders.create(order_date: Time.now), append to order array, fill in customer_id
+has_many
+belongs_to
+has_many_and_belongs_t
