@@ -77,6 +77,20 @@ Here's all the form elements in one form.  When all else fails, copy from here.
         <option value="lenovo"> Lenovo</option>
         <option value="asus"> ASUS</option>
     </select><br><br>
+    <br>
+    <fieldset>
+      <legend> Contact details</legend>
+        <label>Email:<br>
+          <input type="text" name="email" />
+        </label> <br>
+        <label>Mobile:<br>
+          <input type="text" name="mobile" />
+        </label> <br>
+        <label>Assistant:<br>
+          <input type="text" name="assistant" />
+        </label> <br>   
+    </fieldset>
+    
     <input type="submit" name="whew" value="Whew, Submit already"/>
 </form>
 
