@@ -123,9 +123,7 @@ and finally, we'll have use for hidden fields with Rails when we need a value in
 
 ```
 
-##OK, What about Rails?
-    
-Rails messes with all of this so embrace the confusion.
+![the unstyled forms] (form.png)
 
 
 
