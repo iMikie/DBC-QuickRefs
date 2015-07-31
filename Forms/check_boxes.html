@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form accept-charset="UTF-8" action="/pets" method="get">
+
+<input id="pet_dog" name="pet_dog" type="checkbox" value="1" />
+<label for="pet_dog">I own a dog</label>
+<input id="pet_cat" name="pet_cat" type="checkbox" value="1" />
+<label for="pet_cat">I own a cat</label>
+    <input name="commit" type="submit" value="Search" />
+</form>
+
+</body>
+</html>
+
+
+<%= form_tag("/pets", method: "post") do %>
+
+<%= check_box_tag(:pet_dog) %>
+<%= label_tag(:pet_dog, "I own a dog") %>
+<%= check_box_tag(:pet_cat) %>
+<%= label_tag(:pet_cat, "I own a cat") %>
+<% end %>
+
+
+form    return_uri: '/petinfo',
+        action:     "GET",
+        checkbox_tag(:return_name => :pet_cat, :label_text => "I own a cat"),
+        checkbox_tag(:pet_dog)
+
+
+search( label: "Search for:",
+button_name: "Search",
+return_uri: '/search',
+action: 'GET',
+param_name: q)
+

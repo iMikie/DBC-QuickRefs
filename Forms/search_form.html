@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form accept-charset="UTF-8" action="/search" method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <label for="q">Search for:</label>
+    <input id="q" name="q" type="text" />
+    <input name="commit" type="submit" value="Search" />
+</form>
+</body>
+</html>
+<%= form_tag("/search", method: "get") do %>
+<%= label_tag(:q, "Search for:") %>
+<%= text_field_tag(:q) %>
+<%= submit_tag("Search") %>
+<% end %>
+
+
+search( label: "Search for:",
+        button_name: "Search",
+        return_uri: '/search',
+        action: 'GET',
+        param_name: q)
+
+
