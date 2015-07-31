@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form action="http://www.example.com/some_crud">
+    <label> Username:
+        <input type="text" name="username"/>
+    </label><br>
+    <label> Password:
+        <input type="password" name="password"/>
+    </label><br><br>
+
+    <label> What's your opinion of HTML forms?<br>
+        <!--note <textarea> is inconsistent: should be <input type="textarea"> -->
+     <textarea name="opinion" cols="30" rows="4">
+       Enter your comment here.
+     </textarea>
+    </label>
+
+    <p> Radio Buttons- what language sucks the most?<br> <!-- value is what is sent to server if item is selected -->
+        <!-- now using the other label format -->
+        <input id="css-radio" type="radio" name="language" value="css" checked="checked"/>
+        <label for="css-radio"> CSS </label> <br>
+
+        <input id="javascript-radio" type="radio" name="language" value="javascript"/>
+        <label for="javascript-radio"> Javascript </label><br>
+
+        <input id="java-radio" type="radio" name="language" value="java"/>
+        <label for="java-radio"> Java </label><br>
+    </p>
+
+    <p> Checkboxes: what languages do you like?
+        <!-- note: I'm now leaving out <label> tags to make the rest readable -->
+        <br>
+        <input type="checkbox" name="good-language" value="ruby" checked="checked"/> Ruby
+        <input type="checkbox" name="good-language" value="python"/> Python
+        <input type="checkbox" name="good-language" value="livescript"/> Livescript
+    </p>
+
+    <p> Drop-down menu - what is your favorite computer?<br>
+        <select name="computers">
+            <option value="mbp">Mac Book Pro</option>
+            <option value="mba">Mac Book Air</option>
+            <option value="mpro">Mac Pro</option>
+        </select>
+    </p>
+    <p> Multiple Select Box: what computers do you hate? (You can select more than one, use cmd-key on Mac, ctrl PCs)
+    </p>
+    <select name="computers" size="3" multiple="multiple">
+        <option value="dell" selected="selected"> Dell</option>
+        <option value="hp"> HP</option>
+        <option value="lenovo"> Lenovo</option>
+        <option value="asus"> ASUS</option>
+    </select><br><br>
+
+    <fieldset >
+        <legend width="500"> Contact details</legend>
+        <label>Email:<br>
+            <input type="text" name="email" />
+        </label> <br>
+        <label>Mobile:<br>
+            <input type="text" name="mobile" />
+        </label> <br>
+        <label>Assistant:<br>
+            <input type="text" name="assistant" />
+        </label> <br>
+    </fieldset>
+    <br>
+    <input type="submit" name="whew" value="Whew, Submit already"/>
+</form>
+
+</body>
+</html>
