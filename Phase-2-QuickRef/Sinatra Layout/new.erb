@@ -1,0 +1,7 @@
+<section id="sidebar" class="sidebar right">
+</section>
+
+<section id="post_form_container" class="left content">
+  <h1>Write Your Post</h1>
+  <%= erb :'posts/_form', { layout: false, locals: { post: @post } } %>
+</section>

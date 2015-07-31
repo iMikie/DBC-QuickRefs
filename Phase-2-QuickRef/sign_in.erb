@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Welcome to the Auction House</h2>
+  <h1>Sign In</h1>
+
+  <% if @error %>
+    <div class="errors"><%= @error %></div>
+  <% end %>
+
+  <form id="sign-in" method="post" action="/sessions">
+    <label class="label" for="email">Email</label>
+    <input type="email" name="user[email]" placeholder="e.g., me@example.com"><br>
+    <label class="label" for="password">Password</label>
+    <input type="password" name="user[password]" placeholder="6 or more characters">
+    <br>
+    <div class="submit"><input type="submit" value="Sign In"></div>
+  </form>
+
+</div>
