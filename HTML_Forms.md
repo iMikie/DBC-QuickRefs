@@ -122,6 +122,7 @@ and finally, we'll have use for hidden fields with Rails when we need a value in
     <input type="hidden" name="userid" value="5" />                          <!--hidden field -->
 
 ```
+##Here is what the above code yeilds:
 
 ![the unstyled forms] (Forms/form.png)
 
