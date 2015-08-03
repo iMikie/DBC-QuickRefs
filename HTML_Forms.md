@@ -123,7 +123,7 @@ and finally, we'll have use for hidden fields with Rails when we need a value in
 
 ```
 
-![the unstyled forms] (form.png)
+![the unstyled forms] (Forms/form.png)
 
 
 
