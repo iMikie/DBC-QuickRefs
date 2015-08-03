@@ -27,8 +27,8 @@ Add id and class hashes after the path in the link_to method call.
 ```
 ###Delete a record with link_to
 Deleting a record requires a DELETE request.  Pass the *:method => :delete* hash as an option to the link_to helper.
-```html
 
+```html
 <%= link_to "Remove", @user, :method => :delete %>
 # => <a rel="nofollow" data-method="delete" href="/users/1">Remove</a>
 ```
@@ -74,9 +74,10 @@ I don't know how this works.  You can add the :remote => true option to the link
 ```       
 ###Opening the link in a new tab or window
 You can achieve this by using the target="_blank" html attribute which in Rails speak will look like this:
-
+```html
 <%= link_to "Google", "http://google.com", :target => "_blank" %>
 # => <a target="_blank" href="http://google.com">Google</a>
+```
 
 ###POST-ing using link_to
 Sending a post request via a link is something that the html <a href> cannot do. You can only use it to make GET requests, not POST. That being said, Rails has some magic tricks for you.
@@ -85,7 +86,8 @@ By providing the :method => :post option, Rails will create a form and submit it
 ```html
 <%= link_to "Post", root_path, :method => :post %>
 # => <a rel="nofollow" data-method="post" href="/">Post</a>
-Adding more params to the POST request
+
+###Adding more params to the POST request
 <%= link_to "Create User", users_path(:email => "jdoe@email.com", :password => "secret"), :method => :post %>
 # => <a rel="nofollow" data-method="post" href="/users?email=jdoe%40email.com&amp;password=secret">Create User</a>
 ```
