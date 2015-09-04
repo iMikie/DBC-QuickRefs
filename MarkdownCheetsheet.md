@@ -176,6 +176,7 @@ In-line:
 The above gives us the image itself: <br>
 ![alt text] (http://devbootcamp.com/assets/img/devbootcamp-logo.png)
 
+
 Reference style:
 `![alt text for search engines][logo]`<br>
 The above gives us: <br>
@@ -184,6 +185,11 @@ The above gives us: <br>
 Then sometime later in the file you need to have:<br>
 `[logo]: http://devbootcamp.com/assets/img/devbootcamp-logo.png`
 [logo]: http://devbootcamp.com/assets/img/devbootcamp-logo.png
+
+Finally, to point to an image in a GitHub repository your path needs to include blob/master like this: <br>
+`![Semantic UI screenshot](https://github.com/iMikie/Semantic-UI-Rails/blob/master/SUI_screenshot.png)`
+
+![Semantic UI screenshot](https://github.com/iMikie/Semantic-UI-Rails/blob/master/SUI_screenshot.png)
 
 ---
 
