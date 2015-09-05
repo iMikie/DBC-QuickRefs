@@ -67,6 +67,8 @@ For subscript: binary_search<sub>2</sub>, &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp
 
 For non breaking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces inside a line &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `For non breaking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces inside a line` 
 
+For inline code like `/app/assets`   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Use backtick quotes: \`/app/assets\` 
+
 ---
 
 
