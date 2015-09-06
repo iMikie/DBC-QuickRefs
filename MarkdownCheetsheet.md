@@ -32,14 +32,14 @@ michaelmfarr@gmail.com
 <br>
 ###Horizontal Rules
 
-A single - alone on a line with a blank line before it will give a thin line:
+A single dash, - alone on a line with a **blank line before and after** will give a thin line:
 ```
 -
 ```
 
 -
 
-a triple --- alone on a line with a blank line before will give a thick line: 
+a triple --- alone on a line with a **blank line before and after** will give a thick line: 
 ```
 ---
 ```
