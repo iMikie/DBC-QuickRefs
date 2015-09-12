@@ -1,7 +1,8 @@
 ###Rails Quick Ref
 
 ####Starting, some prerequisites
-In running rails you need to be able to run different versions of Ruby.  You'll need to switch versions of Ruby to match the version a client is using or because you want to use a particular library gem.
+Even before you download and start running Rails, make sure you can run different versions of Ruby.  You'll need to switch versions of Ruby to match whatever Rails app you're asked to work on next.  Even at DevBootCamp we switch Ruby versions because the assignment will be to modify a Rails app built with an older version.
+
 The solution is rbenv, which stands for ruby environment.  
 ```sh
 
