@@ -1,17 +1,18 @@
 ###Rails Quick Ref
 
-####Starting
-You run Rails you need to have Ruby.  
-You need rbenv, which stands for ruby environment.  It helps you manage different versions of Ruby.  You'll need to switch versions of Ruby sometimes to get different Gems to run.  
+####Starting, some prerequisites
+In running rails you need to be able to run different versions of Ruby.  You'll need to switch versions of Ruby to match the version a client is using or because you want to use a particular library gem.
+The solution is rbenv, which stands for ruby environment.  
 ```sh
 
-rails --version                             #see if you have rails, and which version
-sudo gem install rails		        #if you don't have rails, this gets the rails framework which an create a new, template rails app
+rails --version                    #see if you have rails, 
+sudo gem install rails		           #if you don't have rails
 sqlite3   #to start sql database
 or start postgres application
 ```
 ####Start the database, run the server
 ```sh
+bin/rails new
 bin/rails db:create
 bin/rails server
 ```
