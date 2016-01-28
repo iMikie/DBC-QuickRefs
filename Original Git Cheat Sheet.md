@@ -8,7 +8,7 @@ To clone use Terminal on the local machine:
 ```sh
 
 git clone <URL from my forked master on GitHub> --this will create a folder
-cd <folder>
+cd <repo name>
 git co master
 ```
 
