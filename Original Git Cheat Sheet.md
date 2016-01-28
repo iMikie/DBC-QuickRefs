@@ -6,7 +6,9 @@
 
 To clone use Terminal on the local machine: 
 ```sh
-git clone <URL from my forked master on GitHub>
+
+git clone <URL from my forked master on GitHub> --this will create a folder
+cd <folder>
 git co master
 ```
 
