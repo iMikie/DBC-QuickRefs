@@ -23,32 +23,85 @@ $MyVar = 25.4               //PHP figures it's a float, note case sensitive
 ```
 ## Data Types
 
-```php
 ### Integers
 ```php
 $Foo =  2;                    //between -2**31 (-2,147,483,648) and 2**32 (2,147,483,647)
 $hexInt = Oxa43b;            
 $octalINt = O7623;
 ```
+
+### Float
+```php
+$floatVar = 25.4    
+```
+
+#### Numeric Operators
+
+|  +  |  -     |   \* |  /     | % (mod) |   \*\*  | []   |   
+|-----|--------|------|--------|---------|---------|------|
+|  =  |   +=   |   -= |  \*=   |   /=    |  %=     |  !=  |   
+| ==  | ===    | !==  |   >    |   <     | >=      |  <=  |   
+| ++$x | $x++  | --$x |  $x--  |         |         |      |
+
 ### String
+
 ```php
 $stringVar =  "somestring";   
 ```
 
-### Float
-```php
-$floatVar = 25.4             
+|String Concatenation     | .   |  $label.$value | 
+|-------------------------|-----|----------------|
+| Concatenation Assignment| .=  | $str .= "lbs."| 
 
 ### Boolean
+
+```php
 $myBool = true;               
 ```
 
+### Operators
+
+| and <br> && |  or  <br> \|\| |     xor      |      !  |         
+|-------------|----------------|--------------|---------|
+
+
+
 ## Arrays
+
 ```php
 $cars = array("Volvo","BMW","Toyota");
 $numbers = array(1,2,3,4);      //???
+
+sort() - sort arrays in ascending order
+rsort() - sort arrays in descending order
+
+
+```
+### Operators
+|  + (union) | == | ===| != <br> <> | !== | 
+|------------|----|----|------------|-----|
+
+## Associative Arrays or Hashes
+Associative arrays, otherwise known as hashes are are key, value pairs
+```php
+$fruitColors = array("apple" => "red", "macintosh" => "green");  
+$betterFruitColors = array("blueberry" => "blue", "squash" => "yellow");  
+```
+Or you can also define an hash by simply assigning one of it's pairs:
+```PHP
+$x['apple'] = "red";
 ```
 
+asort() - sort associative arrays in ascending order, according to the value
+ksort() - sort associative arrays in ascending order, according to the key
+arsort() - sort associative arrays in descending order, according to the value
+krsort() - sort associative arrays in descending order, according to the key
+## Multidimensional Arrays
+
+
+
+
+|
 ## Functions
 
 ```php
