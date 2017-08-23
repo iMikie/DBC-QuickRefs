@@ -125,7 +125,6 @@ echo $herbie->model;                  // show object properties
 //Built in Functions and values
 //Strings
 
-```
 
 ```html
 //Within in Web Page; PHP is executed and the return value is inserted in the HTML
